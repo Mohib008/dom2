@@ -37,11 +37,11 @@ class App extends Component {
                         name="newTodo"
                         placeholder="What needs to be done?"
                         value={newTodo}
-                        onClick={(e) => this.setState({ [e.target.name]: e.target.value })} />
+                        onChange={(e) => this.setState({ [e.target.name]: e.target.value })} />
                     <button
                         type="submit"
                         className="save-button"
-                    ></button>
+                    >save</button>
                 </form>
                 <div className="todo-content">
                     <ol>
